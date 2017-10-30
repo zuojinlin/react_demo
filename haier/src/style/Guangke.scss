@@ -1,0 +1,61 @@
+.sg_judge{
+	width: 100%;
+	margin-top: 8px;
+	padding-bottom: 0;
+	background: url(http://cdn09.ehaier.com/shunguang/H5/www/img/gkbg@2x.png)left top no-repeat #fff;
+	background-size: contain;
+	height: 400px;
+}
+.judge_top{
+	text-align: center;
+	font-size: 18px;
+	color:#2979FF;
+	padding-bottom: 0;
+	padding-top: 10px;
+	height: 20px;
+}
+span{
+	display: inline-block;
+}
+.p_left,.p_right{
+	width: 22px;
+	height: 2px;
+	background: #2979FF;
+	margin-bottom: 5px;
+}
+.p_cen{
+	margin:0 12px;
+}
+.judge_more{
+	font-size: 13px;
+	color: #2979FF;
+	margin-top: 10px;
+	text-align: center;
+}
+.judge_more span{
+	display: inline-block;
+}
+.judge_more img{
+	width: 13px;
+	height: 13px;
+	margin-top: 2px;
+	margin-left: 8px;
+}
+.judge_content{
+	overflow: hidden;
+	margin-top: 15px;
+	padding:0 10px;
+}
+.aa{
+	width: 48%;
+	float: left;
+}
+.aa:nth-child(even){
+	margin-left: 4px;
+}
+.aa:nth-child(odd){
+	margin-right: 4px;
+}
+.aa img{
+	width: 100%;
+}

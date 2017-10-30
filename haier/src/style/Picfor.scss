@@ -1,0 +1,12 @@
+.Picfor{
+	margin-top: 8px;
+	padding: 12px 4px;
+	height: 208px;
+	background: #fff;
+}
+.Picfor img{
+	width: 49%;
+}
+.Picfor img:nth-child(even){
+	float: right;
+}
