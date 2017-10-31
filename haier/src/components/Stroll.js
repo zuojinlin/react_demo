@@ -6,6 +6,9 @@ import Entry from './Entry';
 import Gong from './Gong';
 import Picfor from './Picfor';
 import Guangke from './Guangke';
+import Youhui from './Youhui';
+import Zhuti from './Zhuti';
+import Like from './Like';
 class StrollUI extends Component {
 	componentDidMount(){
 
@@ -18,6 +21,9 @@ class StrollUI extends Component {
 				<Gong/>
 				<Picfor/>
 				<Guangke/>
+				<Youhui/>
+				<Zhuti/>
+				<Like/>
 			</div>
 		)
 	}

@@ -28,6 +28,19 @@ class GuangkeUI extends Component {
 							
 					})}
 				</div>
+				<div className="judge_footer">
+					{this.props.list2.map((item, index) =>{
+							return	<div key={item.id} className="bb">
+										<div className="b-a">
+											<img src={item.avatar}/>
+											<div>{item.storeName}</div>
+										</div>
+										<div className="b-b">
+											<img src="http://cdn09.ehaier.com/shunguang/H5/www/img/follow@2x.png"/>
+										</div>
+									</div>							
+					})}
+				</div>
 			</div>
 		)
 	}

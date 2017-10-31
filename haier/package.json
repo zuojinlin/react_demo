@@ -100,6 +100,14 @@
     "extends": "react-app"
   },
   "proxy": {
+    "/v3/mstore": {
+      "target": "http://s.ehaier.com",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/v3/mstore": "/v3/mstore"
+      },
+      "ws": true
+    },
     "/sg": {
       "target": "http://m.ehaier.com",
       "changeOrigin": true,
@@ -108,11 +116,11 @@
       },
       "ws": true
     },
-    "/v3": {
+    "/v3/cms": {
       "target": "http://m.ehaier.com",
       "changeOrigin": true,
       "pathRewrite": {
-        "^/v3": "/v3"
+        "^/v3/cms": "/v3/cms"
       },
       "ws": true
     }

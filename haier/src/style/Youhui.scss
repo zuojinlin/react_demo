@@ -1,0 +1,48 @@
+.fav_recommond{
+	width: 100%;
+	margin-top: 8px;
+	padding-bottom: 0;
+	background: #FFF;
+}
+.fr__top{
+	text-align: center;
+	font-size: 18px;
+	color:#FF5900;
+	padding-bottom: 0;
+	padding-top: 10px;
+	height: 20px;
+}
+.fav_pic{
+	margin-top: 26px;
+}
+span{
+	display: inline-block;
+}
+.f_left,.f_right{
+	width: 22px;
+	height: 2px;
+	background: #FF5900;
+	margin-bottom: 5px;
+}
+.f_cen{
+	margin:0 12px;
+}
+.img_sw {
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.img_sw .img_l{
+	float: left;
+	height: 267px;
+}
+.img_sw .img_t{
+	float: left;
+	height: 133px;
+}
+.img_sw .img_b{
+	float: left;
+	height: 133px;
+}
+.sw{
+	height: 0;
+}
