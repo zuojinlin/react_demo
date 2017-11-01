@@ -1,0 +1,9 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
+.banner{
+	width:100%;
+	img{
+		width:100%;
+	}
+}
