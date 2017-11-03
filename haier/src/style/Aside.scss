@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @function px2rem($px){
   @return $px / 100px * 1rem;
 }
@@ -7,7 +6,7 @@
 		width:100%;
 		img{
 			width:100%;
-			height:px2rem(84px);
+			height: 84px;
 		}
 	}
 	.a_side{
@@ -69,14 +68,4 @@
 		}
 	}
 
-=======
-@function px2rem($px){
-  @return $px / 100px * 1rem;
-}
-.banner{
-	width:100%;
-	img{
-		width:100%;
-	}
->>>>>>> 880c146fbc978bf6d1692fd5c03c0073c47c2873
 }

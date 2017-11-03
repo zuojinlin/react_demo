@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 @function px2rem($px){
   @return $px / 100px * 1rem;
 }
 #fenlei{
 	position:relative;
 	.list{
-		height: 100%;
 		width:25%;
 		// position:absolute;
 		left:0;
@@ -30,29 +28,4 @@
 		padding:px2rem(10px);
 		box-sizing:border-box;
 	}
-=======
-@function px2rem($px){
-  @return $px / 100px * 1rem;
-}
-#fenlei{
-	position:relative;
-	.list{
-		width:30%;
-		position:absolute;
-		left:0;
-		top:px2rem(30px);
-		li{
-			padding:px2rem(14px) 0  px2rem(14px) px2rem(20px);
-			a{
-				color:#333;
-			}
-		}
-	}
-	.aside{
-		width:70%;
-		position:absolute;
-		left:px2rem(105px);
-		top:px2rem(30px);
-	}
->>>>>>> 880c146fbc978bf6d1692fd5c03c0073c47c2873
 }
