@@ -1,5 +1,8 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
 .swiper{
-  border-bottom: 3px solid #ccc;
+  border-bottom: px2rem(3px) solid #ccc;
 }
 .my-carousel {
   background: #fff;

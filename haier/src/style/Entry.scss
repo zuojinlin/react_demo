@@ -1,3 +1,6 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
 .type_entry_box {
     width: 100%;
     background: #fff;
@@ -9,17 +12,17 @@
 }
 .type_entry_box .type_entry {
     width: 25%;
-    height: 86px;
+    height: px2rem(86px);
     text-align: center;
     // margin-top: 10px;
 }
 .type_entry_box .type_entry img {
 	margin-top: 10px;
-    width: 40px;
-    height: 40px;
+    width: px2rem(40px);
+    height: px2rem(40px);
 }
 .type_entry_box .type_entry div:last-child {
-    font-size: 12px;
+    font-size: px2rem(12px);
     color: #666;
 }
 

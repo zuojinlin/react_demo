@@ -1,6 +1,9 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
 .tabs-icon-bottom.tabs .tab-item, .tabs-icon-bottom>.tabs .tab-item, .tabs-icon-top.tabs .tab-item, .tabs-icon-top>.tabs .tab-item {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: px2rem(10px);
+    line-height: px2rem(14px);
 }
 .bar{
 	display:flax;
@@ -15,12 +18,12 @@
     background-color:#fff;
 }
 .bar-footer{
-	border-top: 1px solid #eee!important;
+	border-top: px2rem(1px) solid #eee!important;
 	padding: 0;
 	bottom: 0;
     border-bottom-width: 0;
     background-position: top;
-    height: 44px;
+    height: px2rem(44px);
 }
 .bg-white{
 	background: #fff!important;
@@ -47,8 +50,8 @@
     bottom: 0;
     z-index: 5;
     width: 100%;
-    height: 49px;
-    line-height: 49px;
+    height: px2rem(49px);
+    line-height: px2rem(49px);
 }
 .tab-on {
     color: #2577e3;
@@ -64,7 +67,7 @@
     flex: 1;
     display: block;
     overflow: hidden;
-    max-width: 150px;
+    max-width: px2rem(150px);
     height: 100%;
     text-align: center;
     text-decoration: none;
@@ -76,6 +79,6 @@
 .tab-item .icon {
     display: block;
     margin: 0 auto;
-    height: 32px;
-    font-size: 32px;
+    height: px2rem(32px);
+    font-size: px2rem(32px);
 }

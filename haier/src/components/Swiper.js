@@ -3,7 +3,9 @@ import {connect} from 'react-redux';
 import axios from 'axios';
 import '../style/Swiper.scss';
 // import Carousel from 'nuka-carousel';
-import { Carousel, WhiteSpace } from 'antd-mobile';
+// import { Carousel, WhiteSpace } from 'antd-mobile';
+import { Carousel } from 'antd';
+import 'antd/dist/antd.css';
 // import { Button } from 'antd-mobile';
 // var Slider = require('react-slick');
 // import Slider from 'react-slick';
@@ -23,7 +25,6 @@ class SliderUI extends Component {
 	        			<a href="#" key={item.id}><img src={item.pic} /></a>
 	      			))}
 					    </Carousel>
-					    <WhiteSpace />
 	  				</div>	
 				</div>
     );

@@ -1,6 +1,6 @@
-const GuangkeReducer = (state=[], action)=>{
+const LIEBIAOReducer = (state=[], action)=>{
 	switch(action.type) {
-		case 'GUANGKE_DATA':
+		case 'LIEBIAO_DATA':
 			console.log(action.payload);
 			return action.payload
 		default:
@@ -8,4 +8,4 @@ const GuangkeReducer = (state=[], action)=>{
 	}
 }
 
-export default GuangkeReducer;
+export default LIEBIAOReducer;

@@ -1,49 +1,52 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
 .sg_judge{
 	width: 100%;
-	margin-top: 8px;
+	margin-top: px2rem(8px);
 	padding-bottom: 0;
 	background: url(http://cdn09.ehaier.com/shunguang/H5/www/img/gkbg@2x.png)left top no-repeat #fff;
 	background-size: contain;
 }
 .judge_top{
 	text-align: center;
-	font-size: 18px;
+	font-size: px2rem(18px);
 	color:#2979FF;
 	padding-bottom: 0;
-	padding-top: 10px;
-	height: 20px;
+	padding-top: px2rem(10px);
+	height: px2rem(20px);
 }
 span{
 	display: inline-block;
 }
 .p_left,.p_right{
-	width: 22px;
-	height: 2px;
+	width: px2rem(22px);
+	height: px2rem(2px);
 	background: #2979FF;
-	margin-bottom: 5px;
+	margin-bottom: px2rem(5px);
 }
 .p_cen{
-	margin:0 12px;
+	margin:0 px2rem(12px);
 }
 .judge_more{
-	font-size: 13px;
+	font-size: px2rem(13px);
 	color: #2979FF;
-	margin-top: 10px;
+	margin-top: px2rem(10px);
 	text-align: center;
 }
 .judge_more span{
 	display: inline-block;
 }
 .judge_more img{
-	width: 13px;
-	height: 13px;
-	margin-top: 2px;
-	margin-left: 8px;
+	width: px2rem(13px);
+	height: px2rem(13px);
+	margin-top: px2rem(2px);
+	margin-left: px2rem(8px);
 }
 .judge_content{
 	overflow: hidden;
-	margin-top: 15px;
-	padding:0 10px;
+	margin-top: px2rem(15px);
+	padding:0 px2rem(10px);
 }
 .aa{
 	width: 48%;
@@ -54,27 +57,27 @@ span{
 	width: 100%;
 }
 .aa div{
-	font-size: 14px;
-	margin:10px 0; 
+	font-size: px2rem(14px);
+	margin:px2rem(10px) 0; 
 }
 .aa:nth-child(even){
-	margin-left: 4px;
+	margin-left: px2rem(4px);
 }
 .aa:nth-child(odd){
-	margin-right: 4px;
+	margin-right: px2rem(4px);
 }
 .bb{
-	height: 48px;
+	height: px2rem(48px);
 	width: 49%;
 	display: flex;
 	align-items:center;
 }
 .b-a {
-	height: 26px;
-	width: 110px;
+	height: px2rem(26px);
+	width: px2rem(110px);
 	display: inline-block;
-	line-height: 26px;
-	margin: 0 7px;
+	line-height: px2rem(26px);
+	margin: 0 px2rem(7px);
 }
 .b-a div{
 	display: inline-block;
@@ -82,22 +85,22 @@ span{
 	overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    min-width: 50px;
+    min-width: px2rem(50px);
 }
 .b-a img{
-	width: 26px;
-	height: 26px;
+	width: px2rem(26px);
+	height: px2rem(26px);
 	border-radius: 100%;
 }
 .b-b{
 	display: inline-block;
 }
 .b-b img{
-	height: 19px;
-	width: 59px;
+	height: px2rem(19px);
+	width: px2rem(59px);
 }
 .judge_footer{
-	padding: 10px 0;
-	border-top: 1px solid #e4e4e4;
+	padding: px2rem(10px) 0;
+	border-top: px2rem(1px) solid #e4e4e4;
 	display: flex;
 }

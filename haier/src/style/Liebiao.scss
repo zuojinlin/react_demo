@@ -1,0 +1,36 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
+ul{
+	overflow: hidden;
+}
+.row>div{
+	display: inline-block;
+	float: left;
+}
+.left{
+	float: left;
+}
+.margin_bottom img{
+	width: px2rem(85px);
+}
+.col_r{
+	max-width: 75%;
+	padding-left: px2rem(10px)!important;
+    padding-right: px2rem(10px)!important;
+    padding-top: px2rem(5px)!important;
+    border-top: px2rem(1px) solid #eee!important;
+}
+.shenglue{
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.lie{
+	height: px2rem(44px);
+	background: #f4f4f4;
+	line-height: px2rem(44px);
+}
+.lie li{
+	padding:0 px2rem(20px)
+}

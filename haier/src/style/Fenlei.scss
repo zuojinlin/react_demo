@@ -1,0 +1,32 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
+#fenlei{
+	position:relative;
+	.list{
+		height: 100%;
+		width:25%;
+		// position:absolute;
+		left:0;
+		bottom:0;
+		top:0;
+		border-right:px2rem(1px) solid #ccc;
+		li{
+			padding:px2rem(14px) 0  px2rem(14px) px2rem(15px);
+			box-sizing:border-box;
+			a{
+				color:#333;
+				font-size:px2rem(16px);
+
+			}
+		}
+	}
+	.aside{
+		width:75%;
+		position:absolute;
+		left:px2rem(95px);
+		top:px2rem(30px);
+		padding:px2rem(10px);
+		box-sizing:border-box;
+	}
+}

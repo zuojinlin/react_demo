@@ -1,7 +1,10 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
 .Picfor{
-	margin-top: 8px;
-	padding: 12px 4px;
-	height: 208px;
+	margin-top: px2rem(8px);
+	padding: px2rem(12px) px2rem(4px);
+	height: px2rem(208px);
 	background: #fff;
 }
 .Picfor img{

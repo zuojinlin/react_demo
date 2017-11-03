@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import axios from 'axios';
 import '../style/Entry.scss';
+import {
+  NavLink
+} from 'react-router-dom'
 
 class EntryUI extends Component {
 	componentDidMount() {
@@ -12,8 +15,10 @@ class EntryUI extends Component {
 			<div className="type_entry_box">
 				<div className="flex">
 					<div className="type_entry">
-						<img src="http://cdn09.ehaier.com/shunguang/H5/www/img/jydq@2x.png"/>
-						<div>家用电器</div>
+						<NavLink exact to="/dianqi">
+							<img src="http://cdn09.ehaier.com/shunguang/H5/www/img/jydq@2x.png"/>
+							<div>家用电器</div>
+						</NavLink>	
 					</div>
 					<div className="type_entry">
 						<img src="http://cdn09.ehaier.com/shunguang/H5/www/img/Fitting@2x.png"/>

@@ -1,4 +1,4 @@
-const YouhuiReducer = (state={midBannerList:[],crowdFunding:[]}, action)=>{
+const ZhutiReducer = (state={midBannerList:[],crowdFunding:[]}, action)=>{
 	switch(action.type) {
 		case 'ZHUTIUI_DATA':
 			console.log(action.payload);
@@ -8,4 +8,4 @@ const YouhuiReducer = (state={midBannerList:[],crowdFunding:[]}, action)=>{
 	}
 }
 
-export default YouhuiReducer;
+export default ZhutiReducer;

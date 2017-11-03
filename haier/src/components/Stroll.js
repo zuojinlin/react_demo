@@ -9,6 +9,7 @@ import Guangke from './Guangke';
 import Youhui from './Youhui';
 import Zhuti from './Zhuti';
 import Like from './Like';
+import Inp from './inp';
 class StrollUI extends Component {
 	componentDidMount(){
 
@@ -16,13 +17,14 @@ class StrollUI extends Component {
 	render () {
 		return (
 			<div id = "stroll">
+				<Inp/>
 				<Swiper/>
 				<Entry/>
 				<Gong/>
 				<Picfor/>
 				<Guangke/>
-				<Youhui/>
-				<Zhuti/>
+				<Youhui oc="优惠推荐"/>
+				<Zhuti oc="主题特色"/>
 				<Like/>
 			</div>
 		)

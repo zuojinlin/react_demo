@@ -1,0 +1,47 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
+.selection_top{
+    width: 100%;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.3),rgba(255,255,255,0));
+    position: fixed;
+    left: 0;
+    z-index: 999;
+}
+.normalFixedTop {
+    height: px2rem(44px);
+}
+.selection_top .address {
+    padding: 0 px2rem(10px) 0 px2rem(16px);
+    color: #fff;
+    font-size: px2rem(15px);
+    display: inline-block;  
+}
+.selection_top .address div {
+    margin-top: px2rem(10px);
+    display: inline-block;
+    max-width: px2rem(45px);
+    margin-right: px2rem(8px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.selection_top .address img {
+    width: px2rem(16px);
+    height: px2rem(9px);
+    vertical-align: middle;
+}
+.selection_top .search {
+    margin-top: px2rem(10px);
+    border-radius: px2rem(14px);
+    background: #fff;
+    height: px2rem(28px);
+    display: inline-block;
+    width: px2rem(230px);
+    overflow: hidden;
+} 
+.selection_top .search img {
+    width: px2rem(13px);
+    height: px2rem(13px);
+    margin: px2rem(8px) px2rem(8px);
+}   

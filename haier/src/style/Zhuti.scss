@@ -1,24 +1,27 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
 .fav_recommond{
 	width: 100%;
-	margin-top: 8px;
+	margin-top: px2rem(8px);
 	padding-bottom: 0;
 	background: #FFF;
 }
 .fr__top{
 	text-align: center;
-	font-size: 18px;
+	font-size: px2rem(18px);
 	color:#FF5900;
 	padding-bottom: 0;
-	padding-top: 10px;
-	height: 20px;
+	padding-top: px2rem(10px);
+	height: px2rem(20px);
 }
 .tf_middle{
-	margin:31px 9px 0;
+	margin:px2rem(31px) px2rem(9px) 0;
 }
 .tf_footer{
-	height: 140px;
+	height: px2rem(140px);
 	width: 100%;
-	margin-top: 10px;
+	margin-top: px2rem(10px);
 }
 .tf_footer img{
 	width: 32%;

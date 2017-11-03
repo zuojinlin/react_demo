@@ -5,10 +5,13 @@ import {
   Link
 } from 'react-router-dom'
 import Stroll from '../components/Stroll';
-import Classify from '../components/Classify';
 import Cart from '../components/Cart';
 import Mine from '../components/Mine';
 import '../style/footer.scss';
+import Dianqi from '../components/for/Dianqi'
+
+import Fenlei from '../components/sjw/Fenlei';
+import Detail from '../components/sjw/Detail';
 
 
 
@@ -30,7 +33,7 @@ class App extends Component {
                 <img className="padding-3 icon" src="http://cdn09.ehaier.com/shunguang/H5/www/img/tab_ic_home_hover.png"/>
                 逛逛
               </Link>
-              <Link to="/classify" onClick={this.tab_color.bind(this)} className="tab-item tab-off">
+              <Link to="/main" onClick={this.tab_color.bind(this)} className="tab-item tab-off">
                 <img className="padding-3 icon" src="http://cdn09.ehaier.com/shunguang/H5/www/img/ic_shop_cart_gray.png"/>
                 分类
               </Link>
@@ -44,10 +47,13 @@ class App extends Component {
               </Link>
             </div>
           </div>
-          <Route exact path="/stroll" component={Stroll}/>
-            <Route path="/classify" component={Classify}/>
+            <Route exact path="/stroll" component={Stroll}/>
+            <Route path="/main" component={Fenlei}/>
             <Route path="/cart" component={Cart}/>
             <Route path="/mine" component={Mine}/>
+            <Route exact path="/dianqi" component={Dianqi}/>
+
+            <Route path="/detail" component={Detail}/>
             </div>
         </Router>
       

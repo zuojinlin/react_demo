@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^2.13.8",
     "antd-mobile": "^2.0.0",
     "autoprefixer": "7.1.2",
     "axios": "^0.17.0",
@@ -108,6 +109,14 @@
       },
       "ws": true
     },
+    "/v3": {
+      "target": "http://m.ehaier.com",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/v3": "/v3"
+      },
+      "ws": true
+    },
     "/sg": {
       "target": "http://m.ehaier.com",
       "changeOrigin": true,
@@ -121,6 +130,14 @@
       "changeOrigin": true,
       "pathRewrite": {
         "^/v3/cms": "/v3/cms"
+      },
+      "ws": true
+    },
+    "/sg/cms": {
+      "target": "http://m.ehaier.com",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/sg/cms": "/sg/cms"
       },
       "ws": true
     }

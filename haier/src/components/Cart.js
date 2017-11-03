@@ -1,18 +1,17 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import axios from 'axios';
+import Back from './Back';
+import Scrol from './Scrol';
 class CartUI extends Component {
 	componentDidMount(){
-		this.props.getData();
+		
 	}
 	render () {
 		return (
-			<div id = "cart">
-				<ul>
-					{this.props.list.map((item, index)=>{
-						return <li key="item.id">{item.name}</li>;
-					})}
-				</ul>
+			<div>
+				<Back oc="购物车"/>
+				<Scrol/>
 			</div>
 		)
 	}
@@ -26,15 +25,7 @@ const mapStateToProps = (state)=>{
 
 const mapDisatchToProps = (dispatch)=>{
 	return{
-		getData:function(){
-			axios.get("/api/aaa")
-			.then((res)=>{
-				dispatch({
-					type:"AAA",
-					payload:res.data.aaa
-				})
-			})
-		}
+		
 	}
 }
 

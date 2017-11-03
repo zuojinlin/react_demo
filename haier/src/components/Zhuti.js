@@ -4,6 +4,7 @@ import axios from 'axios';
 import '../style/Zhuti.scss';
 import { Carousel, WhiteSpace } from 'antd-mobile';
 
+
 class ZhutiUI extends Component {
 	componentDidMount() {
 		this.props.getData()
@@ -13,12 +14,12 @@ class ZhutiUI extends Component {
 			<div className="fav_recommond">
 				<div className="fr__top">
 					<span className="f_left"></span>
-					<span className="f_cen">主题特色</span>
+					<span className="f_cen">{this.props.oc}</span>
 					<span className="f_right"></span>
 				</div>
 				<div className="tf_middle">
 					<div>
-						<Carousel  autoplay={true} infinite={true}>
+						<Carousel  autoplay={true}>
 							{this.props.list4.midBannerList.map((item, index)=>{
 									return <img key={item.id} src = {item.pic}/>
 							})}

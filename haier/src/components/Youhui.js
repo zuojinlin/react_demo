@@ -4,6 +4,7 @@ import axios from 'axios';
 import '../style/Youhui.scss';
 import { Carousel, WhiteSpace } from 'antd-mobile';
 
+
 class YouhuiUI extends Component {
 	componentDidMount() {
 		this.props.getData()
@@ -13,7 +14,7 @@ class YouhuiUI extends Component {
 			<div className="fav_recommond">
 				<div className="fr__top">
 					<span className="f_left"></span>
-					<span className="f_cen">优惠推荐</span>
+					<span className="f_cen">{this.props.oc}</span>
 					<span className="f_right"></span>
 				</div>
 				<div className="fav_pic">
