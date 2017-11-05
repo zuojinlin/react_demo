@@ -5,7 +5,8 @@ import Swiper from '../Swiper';
 import Youhui from '../Youhui';
 import Zhuti from '../Zhuti';
 import Liebiao from './Liebiao';
-import Inp from '../inp';
+
+import Back from '../Back';
 
 class DianqiUI extends Component {
 	componentDidMount(){
@@ -14,7 +15,7 @@ class DianqiUI extends Component {
 	render () {
 		return (
 			<div id = "dianqi">
-				<Inp/>
+				<Back oc="家用电器"/>
 				<Swiper/>
 				<Youhui oc="热门活动"/>
 				<Zhuti oc="爆款推荐"/>

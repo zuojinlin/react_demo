@@ -10,18 +10,14 @@ class GongUI extends Component {
 	render() {
 		return (
 			<div className="gong">
-				{this.props.list1.map((item, index) =>{
-					if (index > 0) {
-						return <div key={item.id} className="sg_notice">
-						<div className="sg_notice_title">
-							<img src="http://cdn09.ehaier.com/shunguang/H5/www/img/affiche@2x.png"/>
-						</div>
-	        			<div className="sg_notice_content">
-	        				{item.content}
-	        			</div>
-	        		</div>
-					}
-				})}
+				<div className="sg_notice">
+					<div className="sg_notice_title">
+						<img src="http://cdn09.ehaier.com/shunguang/H5/www/img/affiche@2x.png"/>
+					</div>
+        			<div className="sg_notice_content">
+        				1111元返现引爆11·11开门红
+        			</div>
+        		</div>
 			</div>
 		)
 	}

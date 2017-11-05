@@ -11,7 +11,7 @@ import YouhuiReducer from './reducers/YouhuiReducer';
 import ZhutiReducer from './reducers/ZhutiReducer';
 import LikeReducer from './reducers/LikeReducer';
 import LiebiaoReducer from './reducers/LiebiaoReducer';
-
+import FilmsReducer from './reducers/FilmsReducer';
 
 
 import FenleiReducer from './reducers/FenleiReducer';
@@ -24,7 +24,8 @@ const reducers = combineReducers({
 	list4:ZhutiReducer,
 	list5:LikeReducer,
 	list6:LiebiaoReducer,
-	fenlei:FenleiReducer
+	fenlei:FenleiReducer,
+	list8:FilmsReducer
 })
 const store = createStore(reducers, {list:[]})
 

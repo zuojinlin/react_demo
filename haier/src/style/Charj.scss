@@ -1,3 +1,31 @@
+@function px2rem($px){
+  @return $px / 100px * 1rem;
+}
 .selectionOnePixelBorder{
 	background: #f4f4f4
+}
+.selectionOnePixelBorder {
+    position: relative;
+    height: px2rem(40px);
+    background: #f4f4f4;
+    font-size: px2rem(14px);
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    line-height: px2rem(26px);
+}
+.selectionSelected{
+	border-radius: px2rem(13px);
+    width: px2rem(60px);
+    height: px2rem(26px);
+    // display: inline-block;
+}
+.selectionSelected {
+    background: #2979ff;
+    color: #fff;
+}
+.selectionSelected img{
+	width: px2rem(6px);
+    height: px2rem(4px);
+    margin-left: px2rem(2px);
 }

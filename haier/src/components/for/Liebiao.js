@@ -4,7 +4,12 @@ import axios from 'axios';
 import '../../style/Liebiao.scss';
 import { Carousel, WhiteSpace } from 'antd-mobile';
 import Charj from './Charj';
-
+import {
+  BrowserRouter as Router,
+  Route,
+  NavLink,
+  Switch
+} from 'react-router-dom';
 
 class LiebiaoUI extends Component {
 	componentDidMount() {
@@ -22,12 +27,12 @@ class LiebiaoUI extends Component {
 				<Charj/>
 				<div>
 						{this.props.list6.map((item, index)=>{
-							return	<div className="row">
-										<div className="col" key={item.pos}>
+							return	<div className="row" key={item + index}>
+										<NavLink exact to={`/productDetail/${item.productId}/0/4/20219251/`} className="col">
 											<div className="margin_bottom">
 												<img src={item.defaultImageUrl}/>
 											</div>
-										</div>
+										</NavLink>
 										<div className="col_r">
 											<div>
 												<span>{item.productFirstName}</span>

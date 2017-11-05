@@ -12,6 +12,9 @@ import Dianqi from '../components/for/Dianqi'
 
 import Fenlei from '../components/sjw/Fenlei';
 import Detail from '../components/sjw/Detail';
+import Detaill from '../components/Detaill';
+import Liebiao from '../components/for/Liebiao';
+
 
 
 
@@ -52,6 +55,7 @@ class App extends Component {
             <Route path="/cart" component={Cart}/>
             <Route path="/mine" component={Mine}/>
             <Route exact path="/dianqi" component={Dianqi}/>
+            <Route path="/productDetail/:productId/0/4/20219251/" component={Detaill}/>
 
             <Route path="/detail" component={Detail}/>
             </div>

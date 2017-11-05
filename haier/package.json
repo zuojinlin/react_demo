@@ -109,14 +109,6 @@
       },
       "ws": true
     },
-    "/v3": {
-      "target": "http://m.ehaier.com",
-      "changeOrigin": true,
-      "pathRewrite": {
-        "^/v3": "/v3"
-      },
-      "ws": true
-    },
     "/sg": {
       "target": "http://m.ehaier.com",
       "changeOrigin": true,
@@ -138,6 +130,14 @@
       "changeOrigin": true,
       "pathRewrite": {
         "^/sg/cms": "/sg/cms"
+      },
+      "ws": true
+    },
+    "/v3/h5": {
+      "target": "http://detail.ehaier.com",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/v3/h5": "/v3/h5"
       },
       "ws": true
     }
